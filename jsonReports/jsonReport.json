@@ -1,0 +1,134 @@
+{
+  "config": {
+    "configFile": "c:\\Users\\syase\\OneDrive\\Documents\\Programming\\Playwright\\playwright.config.ts",
+    "rootDir": "c:/Users/syase/OneDrive/Documents/Programming/Playwright",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "c:/Users/syase/OneDrive/Documents/Programming/Playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "c:/Users/syase/OneDrive/Documents/Programming/Playwright",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.44.0",
+    "workers": 8,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\basicsinteraction.test.ts",
+      "file": "tests/basicsinteraction.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "timedOut",
+                  "duration": 30340,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "c:\\Users\\syase\\OneDrive\\Documents\\Programming\\Playwright\\tests\\basicsinteraction.test.ts",
+                        "column": 36,
+                        "line": 8
+                      },
+                      "message": "Error: locator.getAttribute: Test timeout of 30000ms exceeded.\nCall log:\n  \u001b[2m- waiting for locator('//*[@id=\\'Email\\']')\u001b[22m\n\n\n\u001b[0m \u001b[90m  6 |\u001b[39m     \u001b[36mconst\u001b[39m messageInput1 \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"//*[@id='Password']\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m  7 |\u001b[39m     \u001b[36mconst\u001b[39m button \u001b[33m=\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m\"body > section > div > div > div > div > div > div > div.col-md-10.col-lg-6.col-xl-5.order-2.order-lg-1 > form > center > div > div > button\"\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[36mawait\u001b[39m messageInput\u001b[33m.\u001b[39mgetAttribute(\u001b[32m\"placeholder\"\u001b[39m))\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     expect(messageInput)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m\"placeholder\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"Email\"\u001b[39m)\n \u001b[90m 10 |\u001b[39m     expect(messageInput1)\u001b[33m.\u001b[39mtoHaveAttribute(\u001b[32m\"placeholder\"\u001b[39m\u001b[33m,\u001b[39m\u001b[32m\"Password\"\u001b[39m)\n \u001b[90m 11 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[36mawait\u001b[39m messageInput\u001b[33m.\u001b[39minputValue())\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at c:\\Users\\syase\\OneDrive\\Documents\\Programming\\Playwright\\tests\\basicsinteraction.test.ts:8:36\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-08-20T05:42:37.050Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "c:\\Users\\syase\\OneDrive\\Documents\\Programming\\Playwright\\test-results\\tests-basicsinteraction-\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "c:\\Users\\syase\\OneDrive\\Documents\\Programming\\Playwright\\test-results\\tests-basicsinteraction-\\video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "0682e5a4bf50a9a2c36b-6f92b0bafa83cb9f6ee8",
+          "file": "tests/basicsinteraction.test.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-08-20T05:42:35.145Z",
+    "duration": 32889.50600000001,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
